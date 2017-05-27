@@ -5,8 +5,8 @@
   "main": "index.js",
   "bin": "cli.js",
   "scripts": {
-    "test": "node test && npm run lint",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "node test && npm5 run lint",
+    "semantic-release": "semantic-release pre && npm5 publish && semantic-release post",
     "lint": "eslint ."
   },
   "repository": {

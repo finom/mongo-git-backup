@@ -8,9 +8,10 @@ notifications:
 node_js:
   - '7'
 before_script:
-  - npm prune
+  - npm install -g npm5
+  - npm5 install
 after_success:
-  - npm run semantic-release
+  - npm5 run semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
