@@ -24,4 +24,4 @@ after_success:
   - npm5 run semantic-release
 branches:
   except:
-  - test
+    - test
