@@ -1,4 +1,4 @@
-# mongo-git-backup
+# mongo-git-backup [![Build Status](https://travis-ci.org/finom/mongo-git-backup.svg?branch=master)](https://travis-ci.org/finom/mongo-git-backup) [![npm version](https://badge.fury.io/js/mongo-git-backup.svg)](https://badge.fury.io/js/mongo-git-backup)
 
 The tool exports text dump (via mongoexport) of given MongoDB database to given Git repository and restores it back. Please read MIT License agreement before use.
 

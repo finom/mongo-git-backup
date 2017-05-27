@@ -8,7 +8,10 @@ const repo = 'git@github.com:finom/mongo-git-backup.git';
 const branch = 'test';
 
 MongoClient.connect(`mongodb://localhost:27017/${dbName}`, async (err, db) => {
-    if (err) throw err;
+    if (err) {
+        console.error(err);
+        process.exit(1);
+    }
 
     try {
         const collectionA = db.collection('collectionA');
