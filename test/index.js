@@ -5,7 +5,7 @@ const exportToGit = require('../lib/export');
 
 const dbName = 'mongo-git-backup-test';
 const repo = process.env.TRAVIS
-    ? 'https://$GH_TOKEN@github.com/finom/github-embed.git'
+    ? 'https://$GH_TOKEN@github.com/finom/mongo-git-backup.git'
     : 'git@github.com:finom/mongo-git-backup.git';
 
 const branch = 'test';
