@@ -23,5 +23,4 @@ before_script:
 after_success:
   - npm5 run semantic-release
 branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+  - master
