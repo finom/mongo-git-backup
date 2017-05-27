@@ -1,0 +1,58 @@
+{
+  "name": "mongo-git-backup",
+  "version": "0.0.0-development",
+  "description": "A tool for making text Mongo backups on Git repos Edit",
+  "main": "index.js",
+  "bin": "cli.js",
+  "scripts": {
+    "test": "node test && npm run lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/finom/mongo-git-backup.git"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoexport",
+    "mongoimport"
+  ],
+  "config": {
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ]
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "author": "Andrey Gubanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finom/mongo-git-backup/issues"
+  },
+  "homepage": "https://github.com/finom/mongo-git-backup#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "mongodb": "^2.2.27",
+    "pm2": "^2.4.6",
+    "yargs": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "expect": "^1.20.2",
+    "ghooks": "^2.0.0",
+    "semantic-release": "^6.3.6",
+    "validate-commit-msg": "^2.12.1"
+  }
+}
