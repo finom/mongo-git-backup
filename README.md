@@ -30,7 +30,6 @@ npm install -g pm2
 - `--host` - DB host (optional, `localhost` by default)
 - `--port` - DB port (optional, `27017` by default)
 - `--branch` - a branch of the Git repository (optional, `master` by default)
-- `--tmpDir` - a name of temporary directory where the repository is cloned (optional, `__tmp` by default)
 - `--gitUserName` - Git user name (optional)
 - `--gitUserEmail` - Git user email (optional)
 - `--daemonize` - daemonize export via pm2
@@ -55,7 +54,6 @@ See [PM2 documentation](http://pm2.keymetrics.io/docs/usage/startup/) for more i
 - `--db` - DB name you want to restore (required)
 - `--repo` - a Git repository where backup is stored (required)
 - `--branch` - a branch of the Git repository (optional, `master` by default)
-- `--tmpDir` - a name of temporary directory where the repository is cloned (optional, `__tmp` by default)
 
 Example:
 ```
