@@ -3,7 +3,7 @@
 The tool exports text dump (via mongoexport) of given MongoDB database to given Git repository and restores it back (via mongoimport). Please read MIT License agreement before use.
 
 ### Pros
-- Github and Bitbucket are safe places to store data and a history of data changes.
+- Github and Bitbucket are safe places to store data and history of data changes.
 - You don't need to pay for a storage if you're able to create private repos (on Bitbucket they're free).
 - You can make as many backups as you can and as often as you want since Git stores diffs instead of storing everything.
 - Git GUI clients (including web UI) allow to nicely show diffs between two versions (two commits) of data.
