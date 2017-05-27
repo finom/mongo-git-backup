@@ -7,6 +7,8 @@ const dbName = 'mongo-git-backup-test';
 const repo = process.env.TRAVIS
     ? 'https://$GH_TOKEN@github.com/finom/mongo-git-backup.git'
     : 'git@github.com:finom/mongo-git-backup.git';
+const gitUserName = 'Test Bot';
+const gitUserEmail = 'test@example.com';
 
 const branch = 'test';
 
@@ -34,6 +36,8 @@ MongoClient.connect(`mongodb://localhost:27017/${dbName}`, async (err, db) => {
             db: dbName,
             repo,
             branch,
+            gitUserName,
+            gitUserEmail,
         });
 
         await Promise.all([
@@ -48,6 +52,8 @@ MongoClient.connect(`mongodb://localhost:27017/${dbName}`, async (err, db) => {
             db: dbName,
             repo,
             branch,
+            gitUserName,
+            gitUserEmail,
         });
 
         expect(await collectionA.find({}, { a: 1, _id: 0 }).toArray()).toEqual([{ a: 1 }, { a: 2 }], 'Collection A is not restored');
