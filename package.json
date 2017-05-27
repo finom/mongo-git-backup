@@ -1,6 +1,6 @@
 {
   "name": "mongo-git-backup",
-  "version": "0.0.0-development",
+  "version": "0.0.0-auto",
   "description": "A tool for making text Mongo backups on Git repos Edit",
   "main": "index.js",
   "bin": "cli.js",
