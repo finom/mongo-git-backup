@@ -1,0 +1,5 @@
+notifications:
+  email: false
+branches:
+  except:
+    - test
