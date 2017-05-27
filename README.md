@@ -34,6 +34,7 @@ npm install -g pm2
 - `--gitUserEmail` - Git user email (optional)
 - `--daemonize` - daemonize export via pm2
 - `--interval` - an interval of backups in seconds (works when daemonized, `300` by default)
+- `--undaemonize` - deletes pm2 process and removes given export settings from the list of mongo-git-backup instances
 
 Example:
 ```
@@ -54,10 +55,11 @@ See [PM2 documentation](http://pm2.keymetrics.io/docs/usage/startup/) for more i
 - `--db` - DB name you want to restore (required)
 - `--repo` - a Git repository where backup is stored (required)
 - `--branch` - a branch of the Git repository (optional, `master` by default)
+- `--checkout` - switches to a specified commit or git tag
 
 Example:
 ```
-mongo-git-backup import --db=test --repo=git@github.com:finom/mongo-git-backup.git --branch=test
+mongo-git-backup import --db=test --repo=git@github.com:finom/mongo-git-backup.git --branch=test --checkout=tags/foo
 ```
 Tip: add this command to NPM scripts to run it easier.
 

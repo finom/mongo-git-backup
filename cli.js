@@ -13,7 +13,9 @@ const {
     userName,
     userEmail,
     daemonize,
+    undaemonize,
     interval,
+    checkout,
 } = argv;
 
 const options = {
@@ -26,7 +28,9 @@ const options = {
     userName,
     userEmail,
     daemonize,
+    undaemonize,
     interval,
+    checkout,
 };
 
 if (!db) {
