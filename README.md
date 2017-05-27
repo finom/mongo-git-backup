@@ -55,7 +55,7 @@ See [PM2 documentation](http://pm2.keymetrics.io/docs/usage/startup/) for more i
 - `--db` - DB name you want to restore (required)
 - `--repo` - a Git repository where backup is stored (required)
 - `--branch` - a branch of the Git repository (optional, `master` by default)
-- `--checkout` - switches to a specified commit or git tag
+- `--checkout` - switches to a specified commit or git tag (optional)
 
 Example:
 ```
