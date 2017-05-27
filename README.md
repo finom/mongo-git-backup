@@ -1,26 +1,24 @@
 # mongo-git-backup
 
-The tool exports text dump (via mongoexport) of given MongoDB database to given Git repository and restores it back. Read MIT License agreement before use.
+The tool exports text dump (via mongoexport) of given MongoDB database to given Git repository and restores it back. Please read MIT License agreement before use.
 
 ### Pros
 - Github and Bitbucket are safe places to store data and a history of data changes.
-- You don't need to pay for a storage if you're able to create private repos (on Bitbucket they're free)
-- You can make as many backups as you can and as often as you can since Git stores diffs instead of storing everything
-- Git GUI clients (including web UI) allow to nicely show diffs between two versions (two commits) of data
+- You don't need to pay for a storage if you're able to create private repos (on Bitbucket they're free).
+- You can make as many backups as you can and as often as you want since Git stores diffs instead of storing everything.
+- Git GUI clients (including web UI) allow to nicely show diffs between two versions (two commits) of data.
 
 ### Cons
-- Likely, it isn't good for big databases
+- Likely, it isn't good for big databases.
 
 ## Install
-To load daemon of the too on boot you need to install [pm2](https://github.com/Unitech/pm2). It's not obligatory.
-
-```
-npm install -g pm2
-```
-
-And then install mongo-git-backup itself.
 ```
 npm install -g mongo-git-backup
+```
+
+To run the tool on boot you need to install [pm2](https://github.com/Unitech/pm2).
+```
+npm install -g pm2
 ```
 
 ## CLI
@@ -45,12 +43,12 @@ mongo-git-backup export --db=test --repo=git@github.com:finom/mongo-git-backup.g
 
 To run the tool on startup:
 
-- Daemonize it first
+- Daemonize it first.
 - Check is `mongo-git-backup` run by typing `pm2 ls` in terminal.
-- Run `pm2 save` to save process list
-- Run `pm2 startup` to run the saved process list on startup
+- Run `pm2 save` to save process list.
+- Run `pm2 startup` to resurrect the saved process list on startup.
 
-See [PM2 documentation](http://pm2.keymetrics.io/docs/usage/startup/) for more info
+See [PM2 documentation](http://pm2.keymetrics.io/docs/usage/startup/) for more info.
 
 ### `mongo-git-backup import` options
 
