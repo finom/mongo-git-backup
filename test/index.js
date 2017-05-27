@@ -4,7 +4,10 @@ const importFromGit = require('../lib/import');
 const exportToGit = require('../lib/export');
 
 const dbName = 'mongo-git-backup-test';
-const repo = 'git@github.com:finom/mongo-git-backup.git';
+const repo = process.env.TRAVIS
+    ? 'https://$GH_TOKEN@github.com/finom/github-embed.git'
+    : 'git@github.com:finom/mongo-git-backup.git';
+
 const branch = 'test';
 
 MongoClient.connect(`mongodb://localhost:27017/${dbName}`, async (err, db) => {
