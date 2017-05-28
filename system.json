@@ -1,0 +1,16 @@
+{"_id":{"$oid":"5929589ad8524c0041384f1c"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionA"}
+{"_id":{"$oid":"5929589ad8524c0041384f1e"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionB"}
+{"_id":{"$oid":"592958c1d8524c0041384f43"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionA"}
+{"_id":{"$oid":"592958c1d8524c0041384f45"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionB"}
+{"_id":{"$oid":"592958fad8524c0041384f6d"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionA"}
+{"_id":{"$oid":"592958fad8524c0041384f6f"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionB"}
+{"_id":{"$oid":"59295946d8524c0041384f94"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionA"}
+{"_id":{"$oid":"59295946d8524c0041384f96"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionB"}
+{"_id":{"$oid":"59295956d8524c0041384fb6"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionA"}
+{"_id":{"$oid":"59295956d8524c0041384fb8"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionB"}
+{"_id":{"$oid":"5929596cd8524c0041384fd4"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionA"}
+{"_id":{"$oid":"5929596cd8524c0041384fd6"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionB"}
+{"_id":{"$oid":"592959ebd8524c0041384ffe"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionA"}
+{"_id":{"$oid":"592959ebd8524c0041385000"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionB"}
+{"_id":{"$oid":"59295a48d8524c004138502f"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionA"}
+{"_id":{"$oid":"59295a48d8524c0041385031"},"v":1,"key":{"_id":1},"name":"_id_","ns":"mongo-git-backup-test.collectionB"}
