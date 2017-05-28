@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 const { argv } = require('yargs');
+const package = require('./package');
 const { exportToGit, importFromGit } = require('./');
 
 const {
     _: [type],
+    version,
     host,
     port,
     db,
@@ -33,18 +35,22 @@ const options = {
     checkout,
 };
 
-if (!db) {
-    throw Error('--db parameter is required');
-}
-
-if (!repo) {
-    throw Error('--repo parameter is required');
-}
-
-if (type === 'export') {
-    exportToGit(options);
-} else if (type === 'import') {
-    importFromGit(options);
+if(version) {
+    console.log(package.version);
 } else {
-    throw Error(`Bad type parameter "${type}"`);
+    if (!db) {
+        throw Error('--db parameter is required');
+    }
+
+    if (!repo) {
+        throw Error('--repo parameter is required');
+    }
+
+    if (type === 'export') {
+        exportToGit(options);
+    } else if (type === 'import') {
+        importFromGit(options);
+    } else {
+        throw Error(`Bad type parameter "${type}"`);
+    }
 }
