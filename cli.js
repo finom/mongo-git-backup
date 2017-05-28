@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const { argv } = require('yargs');
-const package = require('./package');
+const pkg = require('./package');
 const { exportToGit, importFromGit } = require('./');
 
 const {
@@ -35,8 +35,8 @@ const options = {
     checkout,
 };
 
-if(version) {
-    console.log(package.version);
+if (version) {
+    console.log(pkg.version);
 } else {
     if (!db) {
         throw Error('--db parameter is required');
