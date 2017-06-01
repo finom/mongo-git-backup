@@ -80,3 +80,20 @@ const options = {
 
 exportToGit(options).then(() => importFromGit(options));
 ```
+
+## Common issues
+
+### The daemon doesn't work when I log out from my server
+
+To solve this issue you'll need to use https with generated Github token instead of ssh for repository address.
+
+The token can be generated at settings page:
+
+![](http://i.imgur.com/AXT4cYd.png)
+
+The format is the following: `https://TOKEN@github.com/USERNAME/REPONAME.git` instead of `git@github.com:USERNAME/REPONAME.git`. If you know how to fix the issue let me know.
+
+Example:
+```
+mongo-git-backup import --db=test --repo=https://000000000000000000000@github.com/finom/mongo-git-backup.git --branch=test --checkout=tags/foo
+```
